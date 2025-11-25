@@ -20,15 +20,8 @@ def get_book_text(book_path):
 
 def main():
     check_usage()
-    #book_text = get_book_text(book_path)
-    #print(book_text)
-    #print(get_book_text(book_path))
     count = count_words(get_book_text(book_path))
-    #cc = count_characters(get_book_text(book_path))
-    #print(f"Found {count} total words")
-    #print(cc)
     sort = sort_characters(count_characters(get_book_text(book_path)))
-    #print(f"sorted list: {sort}")
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {book_path}...")
     print("----------- Word Count ----------")

@@ -18,9 +18,7 @@ def sort_characters(char_dict):
     for value in char_dict:
         if value.isalpha() == False:
             pass
-            #char_dict.pop(value)
         else:
             char_list.append({"char": value, "num": char_dict[value]})
             char_list.sort(key=lambda x: x["num"], reverse=True)
-            #sorted_list = sorted(char_list, key=lambda char:"num"[1], reverse=True)
     return char_list
